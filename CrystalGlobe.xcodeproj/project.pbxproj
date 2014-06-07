@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		185692411942CED500A9D9DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692401942CED500A9D9DA /* Foundation.framework */; };
+		185692431942CED500A9D9DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692421942CED500A9D9DA /* CoreGraphics.framework */; };
+		185692451942CED500A9D9DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692441942CED500A9D9DA /* UIKit.framework */; };
+		1856924B1942CED500A9D9DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185692491942CED500A9D9DA /* InfoPlist.strings */; };
+		1856924D1942CED500A9D9DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856924C1942CED500A9D9DA /* main.m */; };
+		185692511942CED500A9D9DA /* CryGloAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185692501942CED500A9D9DA /* CryGloAppDelegate.m */; };
+		185692541942CED500A9D9DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185692521942CED500A9D9DA /* Main.storyboard */; };
+		185692571942CED500A9D9DA /* CryGloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185692561942CED500A9D9DA /* CryGloViewController.m */; };
+		185692591942CED500A9D9DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185692581942CED500A9D9DA /* Images.xcassets */; };
+		185692601942CED500A9D9DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1856925F1942CED500A9D9DA /* XCTest.framework */; };
+		185692611942CED500A9D9DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692401942CED500A9D9DA /* Foundation.framework */; };
+		185692621942CED500A9D9DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692441942CED500A9D9DA /* UIKit.framework */; };
+		1856926A1942CED500A9D9DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185692681942CED500A9D9DA /* InfoPlist.strings */; };
+		1856926C1942CED500A9D9DA /* CrystalGlobeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856926B1942CED500A9D9DA /* CrystalGlobeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		185692631942CED500A9D9DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185692351942CED500A9D9DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1856923C1942CED500A9D9DA;
+			remoteInfo = CrystalGlobe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1856923D1942CED500A9D9DA /* CrystalGlobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalGlobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		185692401942CED500A9D9DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		185692421942CED500A9D9DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		185692441942CED500A9D9DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		185692481942CED500A9D9DA /* CrystalGlobe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalGlobe-Info.plist"; sourceTree = "<group>"; };
+		1856924A1942CED500A9D9DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1856924C1942CED500A9D9DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1856924E1942CED500A9D9DA /* CrystalGlobe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrystalGlobe-Prefix.pch"; sourceTree = "<group>"; };
+		1856924F1942CED500A9D9DA /* CryGloAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryGloAppDelegate.h; sourceTree = "<group>"; };
+		185692501942CED500A9D9DA /* CryGloAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryGloAppDelegate.m; sourceTree = "<group>"; };
+		185692531942CED500A9D9DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		185692551942CED500A9D9DA /* CryGloViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryGloViewController.h; sourceTree = "<group>"; };
+		185692561942CED500A9D9DA /* CryGloViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryGloViewController.m; sourceTree = "<group>"; };
+		185692581942CED500A9D9DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1856925E1942CED500A9D9DA /* CrystalGlobeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrystalGlobeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1856925F1942CED500A9D9DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		185692671942CED500A9D9DA /* CrystalGlobeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalGlobeTests-Info.plist"; sourceTree = "<group>"; };
+		185692691942CED500A9D9DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1856926B1942CED500A9D9DA /* CrystalGlobeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalGlobeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1856923A1942CED500A9D9DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185692431942CED500A9D9DA /* CoreGraphics.framework in Frameworks */,
+				185692451942CED500A9D9DA /* UIKit.framework in Frameworks */,
+				185692411942CED500A9D9DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1856925B1942CED500A9D9DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185692601942CED500A9D9DA /* XCTest.framework in Frameworks */,
+				185692621942CED500A9D9DA /* UIKit.framework in Frameworks */,
+				185692611942CED500A9D9DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		185692341942CED500A9D9DA = {
+			isa = PBXGroup;
+			children = (
+				185692461942CED500A9D9DA /* CrystalGlobe */,
+				185692651942CED500A9D9DA /* CrystalGlobeTests */,
+				1856923F1942CED500A9D9DA /* Frameworks */,
+				1856923E1942CED500A9D9DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1856923E1942CED500A9D9DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1856923D1942CED500A9D9DA /* CrystalGlobe.app */,
+				1856925E1942CED500A9D9DA /* CrystalGlobeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1856923F1942CED500A9D9DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185692401942CED500A9D9DA /* Foundation.framework */,
+				185692421942CED500A9D9DA /* CoreGraphics.framework */,
+				185692441942CED500A9D9DA /* UIKit.framework */,
+				1856925F1942CED500A9D9DA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		185692461942CED500A9D9DA /* CrystalGlobe */ = {
+			isa = PBXGroup;
+			children = (
+				1856924F1942CED500A9D9DA /* CryGloAppDelegate.h */,
+				185692501942CED500A9D9DA /* CryGloAppDelegate.m */,
+				185692521942CED500A9D9DA /* Main.storyboard */,
+				185692551942CED500A9D9DA /* CryGloViewController.h */,
+				185692561942CED500A9D9DA /* CryGloViewController.m */,
+				185692581942CED500A9D9DA /* Images.xcassets */,
+				185692471942CED500A9D9DA /* Supporting Files */,
+			);
+			path = CrystalGlobe;
+			sourceTree = "<group>";
+		};
+		185692471942CED500A9D9DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				185692481942CED500A9D9DA /* CrystalGlobe-Info.plist */,
+				185692491942CED500A9D9DA /* InfoPlist.strings */,
+				1856924C1942CED500A9D9DA /* main.m */,
+				1856924E1942CED500A9D9DA /* CrystalGlobe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		185692651942CED500A9D9DA /* CrystalGlobeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1856926B1942CED500A9D9DA /* CrystalGlobeTests.m */,
+				185692661942CED500A9D9DA /* Supporting Files */,
+			);
+			path = CrystalGlobeTests;
+			sourceTree = "<group>";
+		};
+		185692661942CED500A9D9DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				185692671942CED500A9D9DA /* CrystalGlobeTests-Info.plist */,
+				185692681942CED500A9D9DA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1856923C1942CED500A9D9DA /* CrystalGlobe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1856926F1942CED500A9D9DA /* Build configuration list for PBXNativeTarget "CrystalGlobe" */;
+			buildPhases = (
+				185692391942CED500A9D9DA /* Sources */,
+				1856923A1942CED500A9D9DA /* Frameworks */,
+				1856923B1942CED500A9D9DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrystalGlobe;
+			productName = CrystalGlobe;
+			productReference = 1856923D1942CED500A9D9DA /* CrystalGlobe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1856925D1942CED500A9D9DA /* CrystalGlobeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185692721942CED500A9D9DA /* Build configuration list for PBXNativeTarget "CrystalGlobeTests" */;
+			buildPhases = (
+				1856925A1942CED500A9D9DA /* Sources */,
+				1856925B1942CED500A9D9DA /* Frameworks */,
+				1856925C1942CED500A9D9DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				185692641942CED500A9D9DA /* PBXTargetDependency */,
+			);
+			name = CrystalGlobeTests;
+			productName = CrystalGlobeTests;
+			productReference = 1856925E1942CED500A9D9DA /* CrystalGlobeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		185692351942CED500A9D9DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CryGlo;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = com.satya;
+				TargetAttributes = {
+					1856925D1942CED500A9D9DA = {
+						TestTargetID = 1856923C1942CED500A9D9DA;
+					};
+				};
+			};
+			buildConfigurationList = 185692381942CED500A9D9DA /* Build configuration list for PBXProject "CrystalGlobe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 185692341942CED500A9D9DA;
+			productRefGroup = 1856923E1942CED500A9D9DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1856923C1942CED500A9D9DA /* CrystalGlobe */,
+				1856925D1942CED500A9D9DA /* CrystalGlobeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1856923B1942CED500A9D9DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185692591942CED500A9D9DA /* Images.xcassets in Resources */,
+				1856924B1942CED500A9D9DA /* InfoPlist.strings in Resources */,
+				185692541942CED500A9D9DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1856925C1942CED500A9D9DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1856926A1942CED500A9D9DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		185692391942CED500A9D9DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185692511942CED500A9D9DA /* CryGloAppDelegate.m in Sources */,
+				1856924D1942CED500A9D9DA /* main.m in Sources */,
+				185692571942CED500A9D9DA /* CryGloViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1856925A1942CED500A9D9DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1856926C1942CED500A9D9DA /* CrystalGlobeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		185692641942CED500A9D9DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1856923C1942CED500A9D9DA /* CrystalGlobe */;
+			targetProxy = 185692631942CED500A9D9DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		185692491942CED500A9D9DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1856924A1942CED500A9D9DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		185692521942CED500A9D9DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185692531942CED500A9D9DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		185692681942CED500A9D9DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185692691942CED500A9D9DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1856926D1942CED500A9D9DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1856926E1942CED500A9D9DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		185692701942CED500A9D9DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrystalGlobe/CrystalGlobe-Prefix.pch";
+				INFOPLIST_FILE = "CrystalGlobe/CrystalGlobe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		185692711942CED500A9D9DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrystalGlobe/CrystalGlobe-Prefix.pch";
+				INFOPLIST_FILE = "CrystalGlobe/CrystalGlobe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		185692731942CED500A9D9DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CrystalGlobe.app/CrystalGlobe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrystalGlobe/CrystalGlobe-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CrystalGlobeTests/CrystalGlobeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		185692741942CED500A9D9DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CrystalGlobe.app/CrystalGlobe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrystalGlobe/CrystalGlobe-Prefix.pch";
+				INFOPLIST_FILE = "CrystalGlobeTests/CrystalGlobeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		185692381942CED500A9D9DA /* Build configuration list for PBXProject "CrystalGlobe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1856926D1942CED500A9D9DA /* Debug */,
+				1856926E1942CED500A9D9DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1856926F1942CED500A9D9DA /* Build configuration list for PBXNativeTarget "CrystalGlobe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185692701942CED500A9D9DA /* Debug */,
+				185692711942CED500A9D9DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		185692721942CED500A9D9DA /* Build configuration list for PBXNativeTarget "CrystalGlobeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185692731942CED500A9D9DA /* Debug */,
+				185692741942CED500A9D9DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 185692351942CED500A9D9DA /* Project object */;
+}
