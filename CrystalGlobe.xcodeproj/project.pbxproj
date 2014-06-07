@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1846A85E1942D729004406F9 /* CryGloPredicationsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846A85D1942D729004406F9 /* CryGloPredicationsData.m */; };
+		1846A8601942EFD6004406F9 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1846A85F1942EFD6004406F9 /* crystal_ball.mp3 */; };
 		185692411942CED500A9D9DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692401942CED500A9D9DA /* Foundation.framework */; };
 		185692431942CED500A9D9DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692421942CED500A9D9DA /* CoreGraphics.framework */; };
 		185692451942CED500A9D9DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692441942CED500A9D9DA /* UIKit.framework */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		1846A85C1942D729004406F9 /* CryGloPredicationsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryGloPredicationsData.h; sourceTree = "<group>"; };
 		1846A85D1942D729004406F9 /* CryGloPredicationsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryGloPredicationsData.m; sourceTree = "<group>"; };
+		1846A85F1942EFD6004406F9 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
 		1856923D1942CED500A9D9DA /* CrystalGlobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalGlobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185692401942CED500A9D9DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		185692421942CED500A9D9DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -127,6 +129,7 @@
 				1846A85B1942D6F8004406F9 /* Models */,
 				1856924F1942CED500A9D9DA /* CryGloAppDelegate.h */,
 				185692501942CED500A9D9DA /* CryGloAppDelegate.m */,
+				1846A85F1942EFD6004406F9 /* crystal_ball.mp3 */,
 				185692521942CED500A9D9DA /* Main.storyboard */,
 				185692551942CED500A9D9DA /* CryGloViewController.h */,
 				185692561942CED500A9D9DA /* CryGloViewController.m */,
@@ -244,6 +247,7 @@
 			files = (
 				185692591942CED500A9D9DA /* Images.xcassets in Resources */,
 				1856924B1942CED500A9D9DA /* InfoPlist.strings in Resources */,
+				1846A8601942EFD6004406F9 /* crystal_ball.mp3 in Resources */,
 				185692541942CED500A9D9DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

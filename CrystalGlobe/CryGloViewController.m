@@ -8,17 +8,27 @@
 
 #import "CryGloViewController.h"
 #import "CryGloPredicationsData.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface CryGloViewController ()
 
 @end
 
-@implementation CryGloViewController
+@implementation CryGloViewController {
+    SystemSoundID soundEffect;
+}
 
 #pragma mark View Lifecycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Setting the sound
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"crystal_ball" ofType:@"mp3"];
+    NSURL *soundURL = [NSURL fileURLWithPath:soundPath];
+    AudioServicesCreateSystemSoundID(CFBridgingRetain(soundURL), &soundEffect);
+    
+    
 	// Initialize the model array here. All the predictions the app shows will be read from here.
     self.predict = [[CryGloPredicationsData alloc] initWithQuotes];
     self.backgroundImageView.animationImages = [[NSArray alloc] initWithObjects:
@@ -122,6 +132,7 @@
 -(void)setPrediction {
     [self.backgroundImageView startAnimating];
     self.predictionLabel.text=[self.predict makePrediction];
+    AudioServicesPlaySystemSound(soundEffect);
     
     [UIView animateWithDuration:6.0 animations:^{
         self.predictionLabel.alpha = 1.0f;
