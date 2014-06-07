@@ -15,6 +15,7 @@
 
 @implementation CryGloViewController
 
+#pragma mark View Lifecycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -23,13 +24,47 @@
     
 }
 
+#pragma mark Warnings
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark Target-Action
 - (IBAction)predictButtonPressed:(id)sender {
+    [self setPrediction];
+}
+
+
+#pragma mark Motion Events
+-(void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    if(event.subtype == UIEventSubtypeMotionShake) {
+        [self resetPrediction];
+    }
+}
+
+-(void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    if(event.subtype == UIEventSubtypeMotionShake) {
+       [self setPrediction];
+    }
+}
+
+-(void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    
+}
+
+#pragma mark Utility Methods
+-(void)setPrediction {
     self.predictionLabel.text=[self.predict makePrediction];
 }
+
+-(void)resetPrediction {
+    self.predictionLabel.text=nil;
+}
+
+
+
+
+
 @end
