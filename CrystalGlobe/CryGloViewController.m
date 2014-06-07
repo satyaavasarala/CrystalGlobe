@@ -112,10 +112,9 @@
         }
         [images addObject:image];
     }
-    self.backgroundImageView.animationImages = images;
-
-    self.backgroundImageView.animationDuration = 2.5f;
-    self.backgroundImageView.animationRepeatCount = 1;
+    [self.backgroundImageView setAnimationImages:images];
+    [self.backgroundImageView setAnimationDuration:2.5f];
+    [self.backgroundImageView setAnimationRepeatCount:1];
     [self.view insertSubview:self.backgroundImageView atIndex:0];
 }
 
