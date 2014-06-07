@@ -16,7 +16,6 @@
 		1856924B1942CED500A9D9DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185692491942CED500A9D9DA /* InfoPlist.strings */; };
 		1856924D1942CED500A9D9DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856924C1942CED500A9D9DA /* main.m */; };
 		185692511942CED500A9D9DA /* CryGloAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185692501942CED500A9D9DA /* CryGloAppDelegate.m */; };
-		185692541942CED500A9D9DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185692521942CED500A9D9DA /* Main.storyboard */; };
 		185692571942CED500A9D9DA /* CryGloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185692561942CED500A9D9DA /* CryGloViewController.m */; };
 		185692591942CED500A9D9DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185692581942CED500A9D9DA /* Images.xcassets */; };
 		185692601942CED500A9D9DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1856925F1942CED500A9D9DA /* XCTest.framework */; };
@@ -51,7 +50,6 @@
 		1856924E1942CED500A9D9DA /* CrystalGlobe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrystalGlobe-Prefix.pch"; sourceTree = "<group>"; };
 		1856924F1942CED500A9D9DA /* CryGloAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryGloAppDelegate.h; sourceTree = "<group>"; };
 		185692501942CED500A9D9DA /* CryGloAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryGloAppDelegate.m; sourceTree = "<group>"; };
-		185692531942CED500A9D9DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		185692551942CED500A9D9DA /* CryGloViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryGloViewController.h; sourceTree = "<group>"; };
 		185692561942CED500A9D9DA /* CryGloViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryGloViewController.m; sourceTree = "<group>"; };
 		185692581942CED500A9D9DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 				1856924F1942CED500A9D9DA /* CryGloAppDelegate.h */,
 				185692501942CED500A9D9DA /* CryGloAppDelegate.m */,
 				1846A85F1942EFD6004406F9 /* crystal_ball.mp3 */,
-				185692521942CED500A9D9DA /* Main.storyboard */,
 				185692551942CED500A9D9DA /* CryGloViewController.h */,
 				185692561942CED500A9D9DA /* CryGloViewController.m */,
 				185692581942CED500A9D9DA /* Images.xcassets */,
@@ -252,7 +249,6 @@
 				185692591942CED500A9D9DA /* Images.xcassets in Resources */,
 				1856924B1942CED500A9D9DA /* InfoPlist.strings in Resources */,
 				1846A8601942EFD6004406F9 /* crystal_ball.mp3 in Resources */,
-				185692541942CED500A9D9DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +299,6 @@
 				1856924A1942CED500A9D9DA /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		185692521942CED500A9D9DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				185692531942CED500A9D9DA /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		185692681942CED500A9D9DA /* InfoPlist.strings */ = {
