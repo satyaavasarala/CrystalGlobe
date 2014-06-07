@@ -29,10 +29,16 @@
                                 <state key="normal" title="Predict">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="predictButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="epi-rO-F09"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="predictionLabel" destination="mQc-Wq-vQ9" id="ynp-6c-R6b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CryGloViewController : UIViewController
+- (IBAction)predictButtonPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 
 @end
