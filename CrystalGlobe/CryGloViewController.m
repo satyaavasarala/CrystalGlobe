@@ -31,6 +31,75 @@
     
 	// Initialize the model array here. All the predictions the app shows will be read from here.
     self.predict = [[CryGloPredicationsData alloc] initWithQuotes];
+    
+    // Prepare Background Image View to appear
+    [self prepareBackgroundImageView];
+    
+    // Prepare Predict Button
+    [self preparePredictButton];
+    
+    //Prepare Prediction Label
+    [self preparePredictionLabel];
+    
+    // set constraints
+    [self setConstrainsts];
+}
+
+
+#pragma mark Warnings
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark Target-Action
+- (IBAction)predictButtonPressed:(id)sender {
+    [self resetPrediction];
+    [self setPrediction];
+}
+
+
+#pragma mark Motion Events
+-(void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    if(event.subtype == UIEventSubtypeMotionShake) {
+        [self resetPrediction];
+    }
+}
+
+-(void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    if(event.subtype == UIEventSubtypeMotionShake) {
+       [self setPrediction];
+    }
+}
+
+-(void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    
+}
+
+#pragma mark Utility Methods
+-(void)setPrediction {
+    [self.backgroundImageView startAnimating];
+    self.predictionLabel.text=[self.predict makePrediction];
+    AudioServicesPlaySystemSound(soundEffect);
+    
+    [UIView animateWithDuration:6.0 animations:^{
+        self.predictionLabel.alpha = 1.0f;
+    }];
+}
+
+-(void)resetPrediction {
+    self.predictionLabel.alpha=0.0f;
+}
+
+
+#pragma mark Views Preparation Methods
+
+-(void)prepareBackgroundImageView {
+    self.backgroundImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"CB00001"]];
+    [self.backgroundImageView setContentMode:UIViewContentModeScaleAspectFill];
+    [self.backgroundImageView setFrame:CGRectMake(0, 0, 320, 568)];
+    
     self.backgroundImageView.animationImages = [[NSArray alloc] initWithObjects:
                                                 [UIImage imageNamed:@"CB00001"],
                                                 [UIImage imageNamed:@"CB00002"],
@@ -94,57 +163,60 @@
                                                 [UIImage imageNamed:@"CB00060"],nil];
     self.backgroundImageView.animationDuration = 2.5f;
     self.backgroundImageView.animationRepeatCount = 1;
+    [self.view insertSubview:self.backgroundImageView atIndex:0];
+}
+
+-(void)preparePredictButton {
+    self.predictButton = [[UIButton alloc] init];
+    [self.predictButton setImage:[UIImage imageNamed:@"button-off"] forState:UIControlStateNormal];
+    [self.predictButton setImage:[UIImage imageNamed:@"button-on"] forState:UIControlStateHighlighted];
     
-}
-
-#pragma mark Warnings
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark Target-Action
-- (IBAction)predictButtonPressed:(id)sender {
-    [self resetPrediction];
-    [self setPrediction];
-}
-
-
-#pragma mark Motion Events
--(void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event{
-    if(event.subtype == UIEventSubtypeMotionShake) {
-        [self resetPrediction];
-    }
-}
-
--(void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event{
-    if(event.subtype == UIEventSubtypeMotionShake) {
-       [self setPrediction];
-    }
-}
-
--(void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event{
+    self.predictButton.frame = CGRectMake(0, 0, 241, 49);
     
-}
-
-#pragma mark Utility Methods
--(void)setPrediction {
-    [self.backgroundImageView startAnimating];
-    self.predictionLabel.text=[self.predict makePrediction];
-    AudioServicesPlaySystemSound(soundEffect);
+    [self.predictButton addTarget:self
+                           action:@selector(predictButtonPressed:)
+       forControlEvents:UIControlEventTouchUpInside];
     
-    [UIView animateWithDuration:6.0 animations:^{
-        self.predictionLabel.alpha = 1.0f;
-    }];
+    [self.view insertSubview:self.predictButton atIndex:1];
 }
 
--(void)resetPrediction {
-    self.predictionLabel.alpha=0.0f;
+-(void)preparePredictionLabel {
+    self.predictionLabel = [[UILabel alloc] init];
+    
+    [self.predictionLabel setText:@"Crystall Globe Prediction"];
+    [self.predictionLabel setTextColor:[[UIColor alloc] initWithRed:1.0f green:0.0f blue:0.0f alpha:1.0f]];
+    self.predictionLabel.frame = CGRectMake(0, 0, 241, 49);
+    
+    [self.view insertSubview:self.predictionLabel atIndex:2];
 }
 
-
-
-
+#pragma mark Constraints
+-(void)setConstrainsts {
+    self.predictButton.translatesAutoresizingMaskIntoConstraints = NO;
+    self.backgroundImageView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.predictionLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addConstraints:@[
+                                // Constraints for Prediction Button
+                                [NSLayoutConstraint constraintWithItem:self.predictButton attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0f constant:-20.0f
+                                 ],
+                                [NSLayoutConstraint constraintWithItem:self.predictButton attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0f constant:0.0f
+                                ],
+                                //Constraints for BackgroundImage
+                                [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0f constant:0.0f
+                                ],
+                                [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0f constant:0.0f
+                                ],
+                                [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeRight multiplier:1.0f constant:0.0f
+                                ],
+                                [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1.0f constant:0.0f
+                                 ],
+                                //Constraints for Predcition Label
+                                [NSLayoutConstraint constraintWithItem:self.predictionLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.backgroundImageView attribute:NSLayoutAttributeCenterX multiplier:1.0f constant:0.0f
+                                 ],
+                                [NSLayoutConstraint constraintWithItem:self.predictionLabel attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.backgroundImageView attribute:NSLayoutAttributeCenterY multiplier:1.0f constant:0.0f
+                                 ]
+                                ]
+     ];
+}
 
 @end
