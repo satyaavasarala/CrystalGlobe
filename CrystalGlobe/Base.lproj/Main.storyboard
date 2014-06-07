@@ -23,18 +23,27 @@
                                 <color key="textColor" red="1" green="0.19607844948768616" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceC-XQ-XfH">
-                                <rect key="frame" x="128" y="353" width="65" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceC-XQ-XfH">
+                                <rect key="frame" x="29" y="499" width="261" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Predict">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="H7Z-4b-GfQ"/>
+                                    <constraint firstAttribute="height" constant="49" id="Tnv-al-Jfd"/>
+                                </constraints>
+                                <state key="normal" image="button-off">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="button-on"/>
                                 <connections>
                                     <action selector="predictButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="epi-rO-F09"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ceC-XQ-XfH" secondAttribute="bottom" constant="20" id="R1w-JX-Jsl"/>
+                            <constraint firstAttribute="centerX" secondItem="ceC-XQ-XfH" secondAttribute="centerX" id="SW1-un-vpV"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="predictionLabel" destination="mQc-Wq-vQ9" id="ynp-6c-R6b"/>
@@ -44,6 +53,10 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="button-off" width="261" height="49"/>
+        <image name="button-on" width="261" height="47"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
