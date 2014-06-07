@@ -7,6 +7,7 @@
 //
 
 #import "CryGloViewController.h"
+#import "CryGloPredicationsData.h"
 
 @interface CryGloViewController ()
 
@@ -17,17 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Initialize the quotes array. All the predictions the app shows will be read from here.
-    self.quotes = [[NSArray alloc] initWithObjects:
-                   @"It is Certain",
-                   @"It is Decidedly so",
-                   @"All signs say YES",
-                   @"The stars are not aligned",
-                   @"My reply is no",
-                   @"It is doubtful",
-                   @"Better not tell you now",
-                   @"Concentrate and ask again",
-                   @"Unable to answer now", nil];
+	// Initialize the model array here. All the predictions the app shows will be read from here.
+     self.predict = [[CryGloPredicationsData alloc] initWithQuotes];
     
 }
 
@@ -38,7 +30,6 @@
 }
 
 - (IBAction)predictButtonPressed:(id)sender {
-    int randomNumber = arc4random_uniform(9);
-    self.predictionLabel.text=[self.quotes objectAtIndex:randomNumber];
+    self.predictionLabel.text=[self.predict makePrediction];
 }
 @end
