@@ -16,8 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crystal Globe Prediction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="mQc-Wq-vQ9">
-                                <rect key="frame" x="20" y="254" width="280" height="49"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="INh-Og-Fz8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crystal Globe Prediction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="187" translatesAutoresizingMaskIntoConstraints="NO" id="mQc-Wq-vQ9">
+                                <rect key="frame" x="67" y="241" width="187" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.19607844948768616" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
@@ -41,8 +45,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="INh-Og-Fz8" firstAttribute="centerY" secondItem="mQc-Wq-vQ9" secondAttribute="centerY" constant="32.5" id="7dh-O1-wAu"/>
+                            <constraint firstItem="INh-Og-Fz8" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="B7w-eP-OMT"/>
+                            <constraint firstItem="INh-Og-Fz8" firstAttribute="centerX" secondItem="mQc-Wq-vQ9" secondAttribute="centerX" id="IN5-2w-mUd"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ceC-XQ-XfH" secondAttribute="bottom" constant="20" id="R1w-JX-Jsl"/>
                             <constraint firstAttribute="centerX" secondItem="ceC-XQ-XfH" secondAttribute="centerX" id="SW1-un-vpV"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="INh-Og-Fz8" secondAttribute="bottom" id="ep1-GU-28j"/>
+                            <constraint firstItem="INh-Og-Fz8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="hfM-RG-tSS"/>
+                            <constraint firstAttribute="trailing" secondItem="INh-Og-Fz8" secondAttribute="trailing" id="kYV-Lg-p5s"/>
                         </constraints>
                     </view>
                     <connections>
@@ -54,6 +64,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="320" height="568"/>
         <image name="button-off" width="261" height="49"/>
         <image name="button-on" width="261" height="47"/>
     </resources>
