@@ -11,5 +11,6 @@
 @interface CryGloViewController : UIViewController
 - (IBAction)predictButtonPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+@property (strong, nonatomic) NSArray *quotes;
 
 @end
