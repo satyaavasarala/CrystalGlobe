@@ -14,4 +14,5 @@
 - (IBAction)predictButtonPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 @property (strong, nonatomic) CryGloPredicationsData *predict;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @end
