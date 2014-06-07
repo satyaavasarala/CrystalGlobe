@@ -96,6 +96,7 @@
 
 #pragma mark Target-Action
 - (IBAction)predictButtonPressed:(id)sender {
+    [self resetPrediction];
     [self setPrediction];
 }
 
@@ -119,12 +120,16 @@
 
 #pragma mark Utility Methods
 -(void)setPrediction {
-    self.backgroundImageView.startAnimating;
+    [self.backgroundImageView startAnimating];
     self.predictionLabel.text=[self.predict makePrediction];
+    
+    [UIView animateWithDuration:6.0 animations:^{
+        self.predictionLabel.alpha = 1.0f;
+    }];
 }
 
 -(void)resetPrediction {
-    self.predictionLabel.text=nil;
+    self.predictionLabel.alpha=0.0f;
 }
 
 
