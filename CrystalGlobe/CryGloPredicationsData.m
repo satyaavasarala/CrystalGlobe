@@ -15,12 +15,12 @@
                    @"It is Certain",
                    @"It is Decidedly so",
                    @"All signs say YES",
-                   @"The stars are not aligned",
+                   @"The stars are aligned",
                    @"My reply is no",
                    @"It is doubtful",
                    @"Better not tell you now",
                    @"Concentrate and ask again",
-                   @"Unable to answer now", nil];
+                   @"Unable to answer now",nil];
     return self;
 }
 

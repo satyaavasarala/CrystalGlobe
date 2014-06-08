@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "CryGloPredicationsData.h"
 
 @interface CrystalGlobeTests : XCTestCase
 
@@ -14,10 +15,11 @@
 
 @implementation CrystalGlobeTests
 
+CryGloPredicationsData *predictions;
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    predictions = [[CryGloPredicationsData alloc] initWithQuotes];
 }
 
 - (void)tearDown
@@ -26,9 +28,19 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testCryGloPredicationsDataNotNil
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertNotNil(predictions, @"Initializing CryGloPredicationsData failed.");
+}
+
+-(void)testPredictionsIsString
+{
+    XCTAssertTrue([[predictions makePrediction] isKindOfClass:[NSString class]], @"Returned prediction is not a NSString");
+}
+
+-(void)testSizeOfQuotesArray
+{
+    XCTAssertEqual([predictions.quotes count], 9, "The number of strings in the quotes array is not equal to 9");
 }
 
 @end
