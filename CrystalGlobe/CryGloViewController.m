@@ -9,6 +9,7 @@
 #import "CryGloViewController.h"
 #import "CryGloPredicationsData.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import <Masonry/Masonry.h>
 
 @interface CryGloViewController ()
 
@@ -144,31 +145,26 @@
 
 #pragma mark Constraints
 -(void)setConstrainsts {
-    self.predictButton.translatesAutoresizingMaskIntoConstraints = NO;
-    self.backgroundImageView.translatesAutoresizingMaskIntoConstraints = NO;
-    self.predictionLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addConstraints:@[
-                                // Constraints for Prediction Button
-                                [NSLayoutConstraint constraintWithItem:self.predictButton attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0f constant:-20.0f
-                                 ],
-                                [NSLayoutConstraint constraintWithItem:self.predictButton attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0f constant:0.0f
-                                ],
-                                //Constraints for BackgroundImage
-                                [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0f constant:0.0f
-                                ],
-                                [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1.0f constant:0.0f
-                                ],
-                                [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeRight multiplier:1.0f constant:0.0f
-                                ],
-                                [NSLayoutConstraint constraintWithItem:self.backgroundImageView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1.0f constant:0.0f
-                                 ],
-                                //Constraints for Predcition Label
-                                [NSLayoutConstraint constraintWithItem:self.predictionLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.backgroundImageView attribute:NSLayoutAttributeCenterX multiplier:1.0f constant:0.0f
-                                 ],
-                                [NSLayoutConstraint constraintWithItem:self.predictionLabel attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.backgroundImageView attribute:NSLayoutAttributeCenterY multiplier:1.0f constant:0.0f
-                                 ]
-                                ]
-     ];
+
+    // Constraints for Predict Button. Must be 20pts from the bottom of the screen and horizontally aligned to center
+    [self.predictButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.view.mas_bottom).with.offset(-20.0f);
+        make.centerX.equalTo(self.view.mas_centerX);
+    }];
+    
+    // Constraints for Background ImageView with its all sides same as Window.
+    [self.backgroundImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.view.mas_top);
+        make.bottom.equalTo(self.view.mas_bottom);
+        make.left.equalTo(self.view.mas_left);
+        make.right.equalTo(self.view.mas_right);
+    }];
+    
+    // Constraints for Prediction Label for centerX and centerY equal to that of backgroundImage.
+    [self.predictionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.backgroundImageView.mas_centerX);
+        make.centerY.equalTo(self.backgroundImageView.mas_centerY);
+    }];
 }
 
 @end

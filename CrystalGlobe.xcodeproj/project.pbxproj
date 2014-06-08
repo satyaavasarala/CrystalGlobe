@@ -1,484 +1,1152 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		1846A85E1942D729004406F9 /* CryGloPredicationsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846A85D1942D729004406F9 /* CryGloPredicationsData.m */; };
-		1846A8601942EFD6004406F9 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1846A85F1942EFD6004406F9 /* crystal_ball.mp3 */; };
-		1846A8621942F3C8004406F9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846A8611942F3C8004406F9 /* AudioToolbox.framework */; };
-		185692411942CED500A9D9DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692401942CED500A9D9DA /* Foundation.framework */; };
-		185692431942CED500A9D9DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692421942CED500A9D9DA /* CoreGraphics.framework */; };
-		185692451942CED500A9D9DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692441942CED500A9D9DA /* UIKit.framework */; };
-		1856924B1942CED500A9D9DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185692491942CED500A9D9DA /* InfoPlist.strings */; };
-		1856924D1942CED500A9D9DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856924C1942CED500A9D9DA /* main.m */; };
-		185692511942CED500A9D9DA /* CryGloAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 185692501942CED500A9D9DA /* CryGloAppDelegate.m */; };
-		185692571942CED500A9D9DA /* CryGloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185692561942CED500A9D9DA /* CryGloViewController.m */; };
-		185692591942CED500A9D9DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185692581942CED500A9D9DA /* Images.xcassets */; };
-		185692601942CED500A9D9DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1856925F1942CED500A9D9DA /* XCTest.framework */; };
-		185692611942CED500A9D9DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692401942CED500A9D9DA /* Foundation.framework */; };
-		185692621942CED500A9D9DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185692441942CED500A9D9DA /* UIKit.framework */; };
-		1856926A1942CED500A9D9DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 185692681942CED500A9D9DA /* InfoPlist.strings */; };
-		1856926C1942CED500A9D9DA /* CrystalGlobeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856926B1942CED500A9D9DA /* CrystalGlobeTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		185692631942CED500A9D9DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 185692351942CED500A9D9DA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1856923C1942CED500A9D9DA;
-			remoteInfo = CrystalGlobe;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		1846A85C1942D729004406F9 /* CryGloPredicationsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryGloPredicationsData.h; sourceTree = "<group>"; };
-		1846A85D1942D729004406F9 /* CryGloPredicationsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryGloPredicationsData.m; sourceTree = "<group>"; };
-		1846A85F1942EFD6004406F9 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
-		1846A8611942F3C8004406F9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		1856923D1942CED500A9D9DA /* CrystalGlobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalGlobe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		185692401942CED500A9D9DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		185692421942CED500A9D9DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		185692441942CED500A9D9DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		185692481942CED500A9D9DA /* CrystalGlobe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalGlobe-Info.plist"; sourceTree = "<group>"; };
-		1856924A1942CED500A9D9DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1856924C1942CED500A9D9DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1856924E1942CED500A9D9DA /* CrystalGlobe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrystalGlobe-Prefix.pch"; sourceTree = "<group>"; };
-		1856924F1942CED500A9D9DA /* CryGloAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryGloAppDelegate.h; sourceTree = "<group>"; };
-		185692501942CED500A9D9DA /* CryGloAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryGloAppDelegate.m; sourceTree = "<group>"; };
-		185692551942CED500A9D9DA /* CryGloViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryGloViewController.h; sourceTree = "<group>"; };
-		185692561942CED500A9D9DA /* CryGloViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryGloViewController.m; sourceTree = "<group>"; };
-		185692581942CED500A9D9DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1856925E1942CED500A9D9DA /* CrystalGlobeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrystalGlobeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1856925F1942CED500A9D9DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		185692671942CED500A9D9DA /* CrystalGlobeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalGlobeTests-Info.plist"; sourceTree = "<group>"; };
-		185692691942CED500A9D9DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1856926B1942CED500A9D9DA /* CrystalGlobeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalGlobeTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		1856923A1942CED500A9D9DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1846A8621942F3C8004406F9 /* AudioToolbox.framework in Frameworks */,
-				185692431942CED500A9D9DA /* CoreGraphics.framework in Frameworks */,
-				185692451942CED500A9D9DA /* UIKit.framework in Frameworks */,
-				185692411942CED500A9D9DA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1856925B1942CED500A9D9DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				185692601942CED500A9D9DA /* XCTest.framework in Frameworks */,
-				185692621942CED500A9D9DA /* UIKit.framework in Frameworks */,
-				185692611942CED500A9D9DA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		1846A85B1942D6F8004406F9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				1846A85C1942D729004406F9 /* CryGloPredicationsData.h */,
-				1846A85D1942D729004406F9 /* CryGloPredicationsData.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		185692341942CED500A9D9DA = {
-			isa = PBXGroup;
-			children = (
-				185692461942CED500A9D9DA /* CrystalGlobe */,
-				185692651942CED500A9D9DA /* CrystalGlobeTests */,
-				1856923F1942CED500A9D9DA /* Frameworks */,
-				1856923E1942CED500A9D9DA /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		1856923E1942CED500A9D9DA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1856923D1942CED500A9D9DA /* CrystalGlobe.app */,
-				1856925E1942CED500A9D9DA /* CrystalGlobeTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1856923F1942CED500A9D9DA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1846A8611942F3C8004406F9 /* AudioToolbox.framework */,
-				185692401942CED500A9D9DA /* Foundation.framework */,
-				185692421942CED500A9D9DA /* CoreGraphics.framework */,
-				185692441942CED500A9D9DA /* UIKit.framework */,
-				1856925F1942CED500A9D9DA /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		185692461942CED500A9D9DA /* CrystalGlobe */ = {
-			isa = PBXGroup;
-			children = (
-				1846A85B1942D6F8004406F9 /* Models */,
-				1856924F1942CED500A9D9DA /* CryGloAppDelegate.h */,
-				185692501942CED500A9D9DA /* CryGloAppDelegate.m */,
-				1846A85F1942EFD6004406F9 /* crystal_ball.mp3 */,
-				185692551942CED500A9D9DA /* CryGloViewController.h */,
-				185692561942CED500A9D9DA /* CryGloViewController.m */,
-				185692581942CED500A9D9DA /* Images.xcassets */,
-				185692471942CED500A9D9DA /* Supporting Files */,
-			);
-			path = CrystalGlobe;
-			sourceTree = "<group>";
-		};
-		185692471942CED500A9D9DA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				185692481942CED500A9D9DA /* CrystalGlobe-Info.plist */,
-				185692491942CED500A9D9DA /* InfoPlist.strings */,
-				1856924C1942CED500A9D9DA /* main.m */,
-				1856924E1942CED500A9D9DA /* CrystalGlobe-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		185692651942CED500A9D9DA /* CrystalGlobeTests */ = {
-			isa = PBXGroup;
-			children = (
-				1856926B1942CED500A9D9DA /* CrystalGlobeTests.m */,
-				185692661942CED500A9D9DA /* Supporting Files */,
-			);
-			path = CrystalGlobeTests;
-			sourceTree = "<group>";
-		};
-		185692661942CED500A9D9DA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				185692671942CED500A9D9DA /* CrystalGlobeTests-Info.plist */,
-				185692681942CED500A9D9DA /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		1856923C1942CED500A9D9DA /* CrystalGlobe */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1856926F1942CED500A9D9DA /* Build configuration list for PBXNativeTarget "CrystalGlobe" */;
-			buildPhases = (
-				185692391942CED500A9D9DA /* Sources */,
-				1856923A1942CED500A9D9DA /* Frameworks */,
-				1856923B1942CED500A9D9DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CrystalGlobe;
-			productName = CrystalGlobe;
-			productReference = 1856923D1942CED500A9D9DA /* CrystalGlobe.app */;
-			productType = "com.apple.product-type.application";
-		};
-		1856925D1942CED500A9D9DA /* CrystalGlobeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 185692721942CED500A9D9DA /* Build configuration list for PBXNativeTarget "CrystalGlobeTests" */;
-			buildPhases = (
-				1856925A1942CED500A9D9DA /* Sources */,
-				1856925B1942CED500A9D9DA /* Frameworks */,
-				1856925C1942CED500A9D9DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				185692641942CED500A9D9DA /* PBXTargetDependency */,
-			);
-			name = CrystalGlobeTests;
-			productName = CrystalGlobeTests;
-			productReference = 1856925E1942CED500A9D9DA /* CrystalGlobeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		185692351942CED500A9D9DA /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = CryGlo;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = com.satya;
-				TargetAttributes = {
-					1856925D1942CED500A9D9DA = {
-						TestTargetID = 1856923C1942CED500A9D9DA;
-					};
-				};
-			};
-			buildConfigurationList = 185692381942CED500A9D9DA /* Build configuration list for PBXProject "CrystalGlobe" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 185692341942CED500A9D9DA;
-			productRefGroup = 1856923E1942CED500A9D9DA /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				1856923C1942CED500A9D9DA /* CrystalGlobe */,
-				1856925D1942CED500A9D9DA /* CrystalGlobeTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		1856923B1942CED500A9D9DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				185692591942CED500A9D9DA /* Images.xcassets in Resources */,
-				1856924B1942CED500A9D9DA /* InfoPlist.strings in Resources */,
-				1846A8601942EFD6004406F9 /* crystal_ball.mp3 in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1856925C1942CED500A9D9DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1856926A1942CED500A9D9DA /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		185692391942CED500A9D9DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				185692511942CED500A9D9DA /* CryGloAppDelegate.m in Sources */,
-				1856924D1942CED500A9D9DA /* main.m in Sources */,
-				1846A85E1942D729004406F9 /* CryGloPredicationsData.m in Sources */,
-				185692571942CED500A9D9DA /* CryGloViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1856925A1942CED500A9D9DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1856926C1942CED500A9D9DA /* CrystalGlobeTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		185692641942CED500A9D9DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1856923C1942CED500A9D9DA /* CrystalGlobe */;
-			targetProxy = 185692631942CED500A9D9DA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		185692491942CED500A9D9DA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1856924A1942CED500A9D9DA /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		185692681942CED500A9D9DA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				185692691942CED500A9D9DA /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		1856926D1942CED500A9D9DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		1856926E1942CED500A9D9DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		185692701942CED500A9D9DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CrystalGlobe/CrystalGlobe-Prefix.pch";
-				INFOPLIST_FILE = "CrystalGlobe/CrystalGlobe-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		185692711942CED500A9D9DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CrystalGlobe/CrystalGlobe-Prefix.pch";
-				INFOPLIST_FILE = "CrystalGlobe/CrystalGlobe-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		185692731942CED500A9D9DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CrystalGlobe.app/CrystalGlobe";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CrystalGlobe/CrystalGlobe-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "CrystalGlobeTests/CrystalGlobeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		185692741942CED500A9D9DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CrystalGlobe.app/CrystalGlobe";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CrystalGlobe/CrystalGlobe-Prefix.pch";
-				INFOPLIST_FILE = "CrystalGlobeTests/CrystalGlobeTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		185692381942CED500A9D9DA /* Build configuration list for PBXProject "CrystalGlobe" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1856926D1942CED500A9D9DA /* Debug */,
-				1856926E1942CED500A9D9DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1856926F1942CED500A9D9DA /* Build configuration list for PBXNativeTarget "CrystalGlobe" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				185692701942CED500A9D9DA /* Debug */,
-				185692711942CED500A9D9DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		185692721942CED500A9D9DA /* Build configuration list for PBXNativeTarget "CrystalGlobeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				185692731942CED500A9D9DA /* Debug */,
-				185692741942CED500A9D9DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 185692351942CED500A9D9DA /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>04A1B6B14D3348B987374D46</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1846A85B1942D6F8004406F9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1846A85C1942D729004406F9</string>
+				<string>1846A85D1942D729004406F9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1846A85C1942D729004406F9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CryGloPredicationsData.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1846A85D1942D729004406F9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CryGloPredicationsData.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1846A85E1942D729004406F9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1846A85D1942D729004406F9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1846A85F1942EFD6004406F9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>audio.mp3</string>
+			<key>path</key>
+			<string>crystal_ball.mp3</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1846A8601942EFD6004406F9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1846A85F1942EFD6004406F9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1846A8611942F3C8004406F9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AudioToolbox.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AudioToolbox.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>1846A8621942F3C8004406F9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1846A8611942F3C8004406F9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1846A8631943F5ED004406F9</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692341942CED500A9D9DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1846A8631943F5ED004406F9</string>
+				<string>185692461942CED500A9D9DA</string>
+				<string>185692651942CED500A9D9DA</string>
+				<string>1856923F1942CED500A9D9DA</string>
+				<string>1856923E1942CED500A9D9DA</string>
+				<string>04A1B6B14D3348B987374D46</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692351942CED500A9D9DA</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>CryGlo</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>com.satya</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>1856925D1942CED500A9D9DA</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>1856923C1942CED500A9D9DA</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>185692381942CED500A9D9DA</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>185692341942CED500A9D9DA</string>
+			<key>productRefGroup</key>
+			<string>1856923E1942CED500A9D9DA</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>1856923C1942CED500A9D9DA</string>
+				<string>1856925D1942CED500A9D9DA</string>
+			</array>
+		</dict>
+		<key>185692381942CED500A9D9DA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>1856926D1942CED500A9D9DA</string>
+				<string>1856926E1942CED500A9D9DA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>185692391942CED500A9D9DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>185692511942CED500A9D9DA</string>
+				<string>1856924D1942CED500A9D9DA</string>
+				<string>1846A85E1942D729004406F9</string>
+				<string>185692571942CED500A9D9DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1856923A1942CED500A9D9DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1846A8621942F3C8004406F9</string>
+				<string>185692431942CED500A9D9DA</string>
+				<string>185692451942CED500A9D9DA</string>
+				<string>185692411942CED500A9D9DA</string>
+				<string>2DAB8BD12B1847078C4BB29E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1856923B1942CED500A9D9DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>185692591942CED500A9D9DA</string>
+				<string>1856924B1942CED500A9D9DA</string>
+				<string>1846A8601942EFD6004406F9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1856923C1942CED500A9D9DA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>1856926F1942CED500A9D9DA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F80821F2951E40F08DED7822</string>
+				<string>185692391942CED500A9D9DA</string>
+				<string>1856923A1942CED500A9D9DA</string>
+				<string>1856923B1942CED500A9D9DA</string>
+				<string>92793B58D7134185963C2714</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>CrystalGlobe</string>
+			<key>productName</key>
+			<string>CrystalGlobe</string>
+			<key>productReference</key>
+			<string>1856923D1942CED500A9D9DA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>1856923D1942CED500A9D9DA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>CrystalGlobe.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1856923E1942CED500A9D9DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1856923D1942CED500A9D9DA</string>
+				<string>1856925E1942CED500A9D9DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1856923F1942CED500A9D9DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1846A8611942F3C8004406F9</string>
+				<string>185692401942CED500A9D9DA</string>
+				<string>185692421942CED500A9D9DA</string>
+				<string>185692441942CED500A9D9DA</string>
+				<string>1856925F1942CED500A9D9DA</string>
+				<string>CF97B0E12E2145A2A4F4C580</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692401942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>185692411942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>185692401942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>185692421942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>185692431942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>185692421942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>185692441942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>185692451942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>185692441942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>185692461942CED500A9D9DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1846A85B1942D6F8004406F9</string>
+				<string>1856924F1942CED500A9D9DA</string>
+				<string>185692501942CED500A9D9DA</string>
+				<string>1846A85F1942EFD6004406F9</string>
+				<string>185692551942CED500A9D9DA</string>
+				<string>185692561942CED500A9D9DA</string>
+				<string>185692581942CED500A9D9DA</string>
+				<string>185692471942CED500A9D9DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>CrystalGlobe</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692471942CED500A9D9DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>185692481942CED500A9D9DA</string>
+				<string>185692491942CED500A9D9DA</string>
+				<string>1856924C1942CED500A9D9DA</string>
+				<string>1856924E1942CED500A9D9DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692481942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>CrystalGlobe-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692491942CED500A9D9DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1856924A1942CED500A9D9DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1856924A1942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1856924B1942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>185692491942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1856924C1942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1856924D1942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1856924C1942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1856924E1942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CrystalGlobe-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1856924F1942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CryGloAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692501942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CryGloAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692511942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>185692501942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>185692551942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CryGloViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692561942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CryGloViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692571942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>185692561942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>185692581942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692591942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>185692581942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1856925A1942CED500A9D9DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1856926C1942CED500A9D9DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1856925B1942CED500A9D9DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>185692601942CED500A9D9DA</string>
+				<string>185692621942CED500A9D9DA</string>
+				<string>185692611942CED500A9D9DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1856925C1942CED500A9D9DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>1856926A1942CED500A9D9DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1856925D1942CED500A9D9DA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>185692721942CED500A9D9DA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>1856925A1942CED500A9D9DA</string>
+				<string>1856925B1942CED500A9D9DA</string>
+				<string>1856925C1942CED500A9D9DA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>185692641942CED500A9D9DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>CrystalGlobeTests</string>
+			<key>productName</key>
+			<string>CrystalGlobeTests</string>
+			<key>productReference</key>
+			<string>1856925E1942CED500A9D9DA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>1856925E1942CED500A9D9DA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>CrystalGlobeTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1856925F1942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>185692601942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1856925F1942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>185692611942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>185692401942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>185692621942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>185692441942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>185692631942CED500A9D9DA</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>185692351942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>1856923C1942CED500A9D9DA</string>
+			<key>remoteInfo</key>
+			<string>CrystalGlobe</string>
+		</dict>
+		<key>185692641942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>1856923C1942CED500A9D9DA</string>
+			<key>targetProxy</key>
+			<string>185692631942CED500A9D9DA</string>
+		</dict>
+		<key>185692651942CED500A9D9DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1856926B1942CED500A9D9DA</string>
+				<string>185692661942CED500A9D9DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>CrystalGlobeTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692661942CED500A9D9DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>185692671942CED500A9D9DA</string>
+				<string>185692681942CED500A9D9DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692671942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>CrystalGlobeTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692681942CED500A9D9DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>185692691942CED500A9D9DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>185692691942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1856926A1942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>185692681942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1856926B1942CED500A9D9DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CrystalGlobeTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1856926C1942CED500A9D9DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1856926B1942CED500A9D9DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1856926D1942CED500A9D9DA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>1856926E1942CED500A9D9DA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1856926F1942CED500A9D9DA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>185692701942CED500A9D9DA</string>
+				<string>185692711942CED500A9D9DA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>185692701942CED500A9D9DA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>04A1B6B14D3348B987374D46</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CrystalGlobe/CrystalGlobe-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>CrystalGlobe/CrystalGlobe-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>185692711942CED500A9D9DA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>04A1B6B14D3348B987374D46</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CrystalGlobe/CrystalGlobe-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>CrystalGlobe/CrystalGlobe-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>185692721942CED500A9D9DA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>185692731942CED500A9D9DA</string>
+				<string>185692741942CED500A9D9DA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>185692731942CED500A9D9DA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/CrystalGlobe.app/CrystalGlobe</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CrystalGlobe/CrystalGlobe-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>CrystalGlobeTests/CrystalGlobeTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>185692741942CED500A9D9DA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/CrystalGlobe.app/CrystalGlobe</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CrystalGlobe/CrystalGlobe-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>CrystalGlobeTests/CrystalGlobeTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>2DAB8BD12B1847078C4BB29E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CF97B0E12E2145A2A4F4C580</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>92793B58D7134185963C2714</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>CF97B0E12E2145A2A4F4C580</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F80821F2951E40F08DED7822</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>185692351942CED500A9D9DA</string>
+</dict>
+</plist>
