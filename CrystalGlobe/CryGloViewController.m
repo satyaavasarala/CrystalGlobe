@@ -154,10 +154,7 @@
     
     // Constraints for Background ImageView with its all sides same as Window.
     [self.backgroundImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_top);
-        make.bottom.equalTo(self.view.mas_bottom);
-        make.left.equalTo(self.view.mas_left);
-        make.right.equalTo(self.view.mas_right);
+        make.edges.equalTo(self.view);
     }];
     
     // Constraints for Prediction Label for centerX and centerY equal to that of backgroundImage.
